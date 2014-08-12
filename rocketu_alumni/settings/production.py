@@ -105,7 +105,7 @@ BASE_DIR = os.path.abspath(os.path.join(SITE_ROOT, ".."))
 
 # Heroku platform settings.
 
-HEROKU_APP_NAME = "roucketu-alumni"
+HEROKU_APP_NAME = "rocketu-alumni"
 
 HEROKU_BUILDPACK_URL = "https://github.com/heroku/heroku-buildpack-python.git"
 
@@ -114,7 +114,7 @@ HEROKU_BUILDPACK_URL = "https://github.com/heroku/heroku-buildpack-python.git"
 
 SITE_NAME = "RocketU Alumni"
 
-SITE_DOMAIN = "roucketu-alumni.herokuapp.com"
+SITE_DOMAIN = "rocketu-alumni.herokuapp.com"
 
 PREPEND_WWW = False
 
@@ -378,6 +378,11 @@ CACHES = {
 # A secret key used for cryptographic algorithms.
 
 SECRET_KEY = os.environ.get("SECRET_KEY", get_random_string(50, "abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)"))
+
+
+# Mezzanine NEVERCACHE_KEY
+
+NEVERCACHE_KEY = os.environ.get("NEVERCACHE_KEY")
 
 
 # Logging configuration.
